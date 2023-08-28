@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="-mt-24 lg:-mt-[320px] lg:flex flex-row-reverse md:max-w-3xl xl:max-w-6xl justify-center py-4 px-6 mx-auto font-gilroyLight">
+      <div className="-mt-24 lg:-mt-[320px] lg:flex flex-row-reverse md:max-w-3xl xl:max-w-6xl justify-center py-4 px-6 mx-auto font-gilroyLight text-greenClient">
         <div className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-10 px-4 lg:w-[450px]">
           <h1 className="text-orangeClient text-2xl font-gilroyExtraBold mb-6">
             Cost-Saving Service
