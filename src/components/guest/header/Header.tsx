@@ -23,7 +23,7 @@ const Header: React.FC = () => {
     <>
       <header className="bg-white fixed top-0 w-full drop-shadow-xl z-[9999999]">
         <nav className="md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto">
-          <div className="flex items-center justify-end border-b-2 border-gray pb-2">
+          <div className="flex items-center justify-end border-gray pb-2 border-b-2">
             <Link target="_blank" to={socMedLinks.facebook}>
               <FaFacebookF className="w-4 h-4 text-[#001B1B] cursor-pointer hover:text-orangeClient ease-in duration-300" />{" "}
             </Link>
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
                 to="/"
                 className={`text-xl border-transparent hover:text-orangeClient ease-in duration-300 ${
                   location.pathname === "/"
-                    ? "border-b-2 text-orangeClient"
+                    ? "text-orangeClient"
                     : ""
                 }`}
               >
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
                 to="/projects"
                 className={`text-xl border-transparent hover:text-orangeClient mx-3 ease-in duration-300 ${
                   location.pathname === "/projects"
-                    ? "border-b-2 text-orangeClient"
+                    ? "text-orangeClient"
                     : ""
                 }`}
               >
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 to="/services"
                 className={`text-xl border-transparent hover:text-orangeClient ease-in duration-300 ${
                   location.pathname === "/services"
-                    ? "border-b-2 text-orangeClient"
+                    ? "text-orangeClient"
                     : ""
                 }`}
               >

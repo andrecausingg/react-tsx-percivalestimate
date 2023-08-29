@@ -1,4 +1,6 @@
 import AboutUs from "../../components/guest/about-us/AboutUs";
+import ContactUs from "../../components/guest/contact-us/ContactUs";
+import Footer from "../../components/guest/footer/Footer";
 import Hero from "../../components/guest/hero/Hero";
 import Map from "../../components/guest/map/Map";
 import MissionVission from "../../components/guest/mission-vission/MissionVission";
@@ -14,6 +16,8 @@ const Home: React.FC = () => {
       <OurWork />
       <Map />
       <OurClient />
+      <ContactUs />
+      <Footer />
     </>
   );
 };

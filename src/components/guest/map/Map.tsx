@@ -19,7 +19,7 @@ const Map: React.FC = () => {
         </div>
 
         <div className="lg:flex justify-center lg:gap-4">
-          <div className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-6 px-4 lg:w-[350px] -mt-24">
+          <div className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-6 px-4 lg:w-[350px] lg:-mt-24">
             <h5>Company Address</h5>
             <h1 className=" text-2xl font-gilroyExtraBold">
               1611 AIC Burgundy Empire Tower ADB Avenue Ortigas Center, Pasig
@@ -27,7 +27,7 @@ const Map: React.FC = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-end mt-10 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-end mt-10 gap-1">
             <div className="flex item-center">
               <FaMobileButton className="w-10 h-10 bg-greenClient p-2 text-white" />
               <div className="text-xm ml-2">

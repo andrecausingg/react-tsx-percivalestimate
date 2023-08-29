@@ -175,6 +175,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
+        
         <div className="flex lg:items-center text-white lg:mt-64">
           <div
             onMouseEnter={() => handleProjectHover()}

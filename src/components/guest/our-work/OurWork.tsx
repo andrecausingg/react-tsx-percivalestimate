@@ -35,7 +35,7 @@ const OurWork: React.FC = () => {
       subTitle: "Batangas Event Center",
     },
     {
-      image: image1,
+      image: imageCenter,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "projects",
@@ -122,6 +122,7 @@ const OurWork: React.FC = () => {
                 className={`bg-cover bg-no-repeat relative w-full ease-in duration-300 flex justify-center items-center overflow-hidden h-[300px]`}
                 style={{ backgroundImage: `url('${data.image}')` }}
                 onMouseEnter={() => handleHover(index)}
+                onMouseLeave={() => handleHover(-1)} // Reset hover state on mouse leave
               >
                 <div
                   className={`${
