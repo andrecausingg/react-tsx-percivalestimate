@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header className="bg-white fixed top-0 w-full drop-shadow-xl z-[9999999]">
-        <nav className="md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto">
+        <nav className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:px-0 mx-auto">
           <div className="flex items-center justify-end border-gray pb-2 border-b-2">
             <Link target="_blank" to={socMedLinks.facebook}>
               <FaFacebookF className="w-4 h-4 text-[#001B1B] cursor-pointer hover:text-orangeClient ease-in duration-300" />{" "}

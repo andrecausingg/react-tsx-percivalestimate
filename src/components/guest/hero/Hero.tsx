@@ -194,6 +194,7 @@ const Hero: React.FC = () => {
             </h1>
             <p className="text-l">Completed Projects</p>
           </div>
+
           <div
             onMouseEnter={() => handleCostHover()}
             onMouseLeave={() => handleCostHover()}
@@ -209,7 +210,7 @@ const Hero: React.FC = () => {
             <h1 className="text-4xl lg:text-6xl font-gilroyExtraBold">
               ₱{countProjects === 120 ? "2" : countProjects}B
             </h1>
-            <p className="text-xl">Construction cost</p>
+            <p className="text-l">Construction cost</p>
           </div>
         </div>
       </div>
