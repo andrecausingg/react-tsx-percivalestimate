@@ -123,6 +123,10 @@ const OurWork: React.FC = () => {
                 style={{ backgroundImage: `url('${data.image}')` }}
                 onMouseEnter={() => handleHover(index)}
                 onMouseLeave={() => handleHover(-1)} // Reset hover state on mouse leave
+                data-aos="zoom-out-down"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
               >
                 <div
                   className={`${

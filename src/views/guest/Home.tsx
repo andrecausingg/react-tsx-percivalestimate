@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 import AboutUs from "../../components/guest/about-us/AboutUs";
 import ContactUs from "../../components/guest/contact-us/ContactUs";
@@ -12,6 +14,9 @@ import OurWork from "../../components/guest/our-work/OurWork";
 const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Home - percivalestimate";
+    AOS.init({
+      once: true, // Whether animations should only happen once
+    });
   }, []);
 
   return (

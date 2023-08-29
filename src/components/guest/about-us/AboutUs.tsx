@@ -1,17 +1,20 @@
-import image1 from '../../../assets/images/about-us/about-us-1.jpg'
-import image2 from '../../../assets/images/about-us/about-us-2.jpg'
+import image1 from "../../../assets/images/about-us/about-us-1.jpg";
+import image2 from "../../../assets/images/about-us/about-us-2.jpg";
 
 const AboutUs: React.FC = () => {
   return (
     <>
-      <div className="grid md:grid-cols-2 items-center font-gilroyLight md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto mt-24 gap-4 text-greenClient">
-        <div>
+      <div className="grid md:grid-cols-2 items-center font-gilroyLight md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto mt-24 gap-4 text-greenClient overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h6 className="text-orangeClient">About Us</h6>
           <h1 className="my-4 text-2xl lg:text-4xl font-gilroyExtraBold text-greenClient">
             With our techniques, we guarantee cost savings <br />
-            <span className="text-sm">
-              Identify. Replace. Qualify
-            </span>
+            <span className="text-sm">Identify. Replace. Qualify</span>
           </h1>
           <p>
             <span className="text-orangeClient">percivalestimate</span> has
@@ -80,13 +83,25 @@ const AboutUs: React.FC = () => {
         </div>
 
         <div className="relative h-[400px] lg:[800px]">
-            <div className='shadow-2xl bg-white p-4 w-[200px] xl:w-[300px] absolute right-0 top-0 xl:-top-[150px] '>
-                <img src={image1} alt="" />
-            </div>
+          <div
+            className="shadow-2xl bg-white p-4 w-[200px] xl:w-[300px] absolute right-0 top-0 xl:-top-[150px] "
+            data-aos="fade-up-left"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <img src={image1} alt="" />
+          </div>
 
-            <div className='shadow-2xl bg-white p-4 w-[200px] xl:w-[300px] absolute bottom-0 lg:-bottom-[150px] left-0 xl:left-[150px]'>
-                <img src={image2} alt="" />
-            </div>
+          <div
+            className="shadow-2xl bg-white p-4 w-[200px] xl:w-[300px] absolute bottom-0 lg:-bottom-[150px] left-0 xl:left-[150px]"
+            data-aos="fade-up-right"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <img src={image2} alt="" />
+          </div>
         </div>
       </div>
     </>

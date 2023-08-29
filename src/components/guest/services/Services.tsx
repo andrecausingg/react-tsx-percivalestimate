@@ -35,7 +35,7 @@ const Services: React.FC = () => {
 
   return (
     <>
-      <div className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight">
+      <div className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight overflow-hidden">
         <div className="mb-8">
           <h6 className="uppercase text-orangeClient">EXPLORE OUR SERVICES</h6>
           <h1 className="text-3xl lg:text-4xl font-gilroyExtraBold">
@@ -43,7 +43,12 @@ const Services: React.FC = () => {
           </h1>
         </div>
         <div className="grid md:grid-cols-2 gap-4 mb-16">
-          <p>
+          <p
+            data-aos="slide-right"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -54,7 +59,12 @@ const Services: React.FC = () => {
             type specimen book.{" "}
           </p>
 
-          <p>
+          <p
+            data-aos="slide-left"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -70,15 +80,27 @@ const Services: React.FC = () => {
           <div
             key={item.id}
             className={`flex flex-col md:flex-row text-white ${
-              item.id % 2 === 0 ? "md:flex-row-reverse" : ""
+              item.id % 2 === 0 ? "md:flex-row-reverse " : ""
             }`}
           >
             {/* Image Container */}
-            <div className="md:w-1/2">
+            <div
+              className="md:w-1/2"
+              data-aos="slide-left"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img className="h-full" src={item.imageSrc} alt="" />
             </div>
             {/* Description Container */}
-            <div className="p-6 bg-greenClient flex flex-col justify-center md:w-1/2">
+            <div
+              className="p-6 bg-greenClient flex flex-col justify-center md:w-1/2"
+              data-aos="slide-right"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h1 className="text-2xl lg:text-4xl font-gilroyExtraBold mb-4">
                 {item.title}
               </h1>

@@ -19,7 +19,13 @@ const Map: React.FC = () => {
         </div>
 
         <div className="lg:flex justify-center lg:gap-4">
-          <div className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-6 px-4 lg:w-[350px] lg:-mt-24">
+          <div
+            className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-6 px-4 lg:w-[350px] lg:-mt-24"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h5>Company Address</h5>
             <h1 className=" text-2xl font-gilroyExtraBold">
               1611 AIC Burgundy Empire Tower ADB Avenue Ortigas Center, Pasig
@@ -27,15 +33,33 @@ const Map: React.FC = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 items-end mt-10 gap-1">
-            <div className="flex item-center">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 items-end mt-10 gap-1"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div
+              className="flex items-center"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <FaMobileButton className="w-10 h-10 bg-greenClient p-2 text-white" />
               <div className="text-xm ml-2">
                 <span>Phone</span>
                 <h5 className="font-gilroyExtraBold">+63 9123 456 789</h5>
               </div>
             </div>
-            <div className="flex item-center">
+            <div
+              className="flex item-center"
+              data-aos="fade-down"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <FaEnvelope className="w-10 h-10 bg-orangeClient p-2 text-white" />
               <div className="text-xm ml-2">
                 <span>Email</span>

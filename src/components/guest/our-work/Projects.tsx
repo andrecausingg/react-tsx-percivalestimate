@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
 
   return (
     <>
-      <div className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight text-white">
+      <div className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight text-white overflow-hidden">
         {/* Desktop */}
         <div className="">
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
@@ -99,6 +99,10 @@ const Projects: React.FC = () => {
                 onMouseEnter={() => handleHover(index)}
                 onMouseLeave={() => handleHover(-1)} // Reset hover state on mouse leave
                 onClick={() => handleClick(index)}
+                data-aos="zoom-out-down"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
               >
                 <div
                   className={`${
