@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import image1 from "../../../assets/images/our-works/our-works-1.png";
-import image2 from "../../../assets/images/our-works/our-works-2.jpg";
+import image2 from "../../../assets/images/our-works/our-works-2.png";
 import image3 from "../../../assets/images/our-works/our-works-3.png";
 import image4 from "../../../assets/images/our-works/our-works-4.png";
 import image6 from "../../../assets/images/our-works/our-works-6.png";

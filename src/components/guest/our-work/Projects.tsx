@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import image1 from "../../../assets/images/projects/project-1.jpg";
+import image1 from "../../../assets/images/projects/project-1.png";
 import image2 from "../../../assets/images/projects/project-2.png";
 import image3 from "../../../assets/images/projects/project-3.png";
 import image4 from "../../../assets/images/projects/project-4.png";
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "retail",
-      place: "HKT Philippines Warehouse",
+      place: "Laguna Warehouse 3",
       description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 3,000 sq.m.",
       designer: "Designed By: Global Design Inc.",
@@ -173,11 +173,11 @@ const Projects: React.FC = () => {
                         <br />
                         <span>{data.description}</span> <br /> <br />
                         <span> {data.area}</span> <br /> <br />
-                        <span>{data.designer}</span> <br />
+                        {/* <span>{data.designer}</span> <br /> */}
                       </div>
                     </div>
                   ) : (
-                    <h1 className="uppercase font-gilroyExtraBold">
+                    <h1 className="text-2xl font-gilroyExtraBold">
                       {data.title}
                       {index !== 4 ? (
                         <span className="normal-case font-gilroyExtraBold">

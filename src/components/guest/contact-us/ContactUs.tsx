@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import image1 from "../../../assets/images/contact-us/contact-us-1.jpg";
 
 const ContactUs: React.FC = () => {
@@ -16,7 +14,7 @@ const ContactUs: React.FC = () => {
             <h1 className="font-gilroyExtraBold">
               Free consultation with exceptional quality
             </h1>
-            <Link to="tel">Just one call away: +63 9999 999 999</Link>
+            <span>Just one call away: +63 916 2047 165</span>
             <div className="mt-4">
               <button className="border-white border-2 py-2 px-4 hover:bg-greenClient hover:border-[#001B1B] ease-in duration-300">
                 Learn More

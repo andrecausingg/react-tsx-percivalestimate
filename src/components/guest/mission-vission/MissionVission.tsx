@@ -164,7 +164,13 @@ const MissionVission: React.FC = () => {
                 <h1 className="text-3xl py-6 font-gilroyExtraBold">
                   Core Values
                 </h1>
-                <p>Strong Moral Principle Adherence Value Efficiency</p>
+                <p>
+                  <span className="font-gilroyExtraBold ">S</span>trong Moral
+                  Principle <br />{" "}
+                  <span className="font-gilroyExtraBold">A</span>dherence <br />
+                  <span className="font-gilroyExtraBold">V</span>alue <br />{" "}
+                  <span className="font-gilroyExtraBold">E</span>fficiency
+                </p>
               </div>
             </div>
           </div>
