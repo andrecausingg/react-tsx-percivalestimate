@@ -1,6 +1,18 @@
+import { useState } from "react";
+
 import image1 from "../../../assets/images/contact-us/contact-us-1.jpg";
+import Contact from "./Contact";
 
 const ContactUs: React.FC = () => {
+  const [isContactContainer, setContactContainer] = useState<boolean>(false);
+
+  const handleContact = () => {
+    if (!isContactContainer) {
+      document.body.style.overflow = "hidden";
+    }
+    setContactContainer(true);
+  };
+
   return (
     <>
       <div className="relative py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight text-white">
@@ -16,7 +28,10 @@ const ContactUs: React.FC = () => {
             </h1>
             <span>Just one call away: +63 916 2047 165</span>
             <div className="mt-4">
-              <button className="border-white border-2 py-2 px-4 hover:bg-greenClient hover:border-[#001B1B] ease-in duration-300">
+              <button
+                onClick={handleContact}
+                className="border-white border-2 py-2 px-4 hover:bg-greenClient hover:border-[#001B1B] ease-in duration-300"
+              >
                 Learn More
               </button>
             </div>
@@ -27,13 +42,25 @@ const ContactUs: React.FC = () => {
               We look forward in doing Construction Cost Saving <br /> with you!
             </h1>
             <div className="mt-4">
-              <button className="border-white border-2 py-2 px-4 hover:bg-orangeClient hover:border-[#EC5900] ease-in duration-300">
+              <button
+                onClick={handleContact}
+                className="border-white border-2 py-2 px-4 hover:bg-orangeClient hover:border-[#EC5900] ease-in duration-300"
+              >
                 Get your Consulation
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {isContactContainer && (
+        <Contact
+          onClose={() => {
+            setContactContainer(false);
+            document.body.style.overflow = "auto";
+          }}
+        />
+      )}
     </>
   );
 };

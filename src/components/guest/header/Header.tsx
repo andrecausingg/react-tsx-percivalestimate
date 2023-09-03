@@ -15,13 +15,13 @@ const Header: React.FC = () => {
   }, [location]);
 
   const socMedLinks = {
-    facebook: "https://www.facebook.com/andrecausinggg",
-    linkedin: "https://twitter.com/yourusername",
+    facebook: "https://web.facebook.com/PercivalEstimate/",
+    linkedin: "https://ph.linkedin.com/company/percival-estimate",
   };
 
   return (
     <>
-      <header className="bg-white fixed top-0 w-full drop-shadow-xl z-[9999999]">
+      <header className="bg-white fixed top-0 w-full drop-shadow-xl z-20">
         <nav className="md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:px-0 mx-auto">
           <div className="flex items-center justify-end border-gray pb-2 border-b-2">
             <Link target="_blank" to={socMedLinks.facebook}>

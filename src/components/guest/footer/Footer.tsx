@@ -1,13 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo/percivalestimate-logo.png";
 
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BiCopyright } from "react-icons/bi";
+import Contact from "../contact-us/Contact";
 
 const Footer: React.FC = () => {
   const location = useLocation(); // Get current location
+  const [isContactContainer, setContactContainer] = useState<boolean>(false);
 
   useEffect(() => {
     // Scroll to the top of the page when the location changes
@@ -15,8 +17,15 @@ const Footer: React.FC = () => {
   }, [location]);
 
   const socMedLinks = {
-    facebook: "https://www.facebook.com/andrecausinggg",
-    linkedin: "https://twitter.com/yourusername",
+    facebook: "https://web.facebook.com/PercivalEstimate/",
+    linkedin: "https://ph.linkedin.com/company/percival-estimate",
+  };
+
+  const handleContact = () => {
+    if (!isContactContainer) {
+      document.body.style.overflow = "hidden";
+    }
+    setContactContainer(true);
   };
 
   return (
@@ -123,7 +132,10 @@ const Footer: React.FC = () => {
               <span>
                 If our percivalestimator accepts bribe, you may contact us here.
               </span>
-              <span className="cursor-pointer font-gilroyExtraBold underline">
+              <span
+                onClick={handleContact}
+                className="cursor-pointer font-gilroyExtraBold underline"
+              >
                 {" "}
                 Let us know
               </span>
@@ -154,6 +166,15 @@ const Footer: React.FC = () => {
           </span>
         </div>
       </div>
+
+      {isContactContainer && (
+        <Contact
+          onClose={() => {
+            setContactContainer(false);
+            document.body.style.overflow = "auto";
+          }}
+        />
+      )}
     </>
   );
 };
