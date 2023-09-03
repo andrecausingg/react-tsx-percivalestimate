@@ -37,7 +37,7 @@ const Header: React.FC = () => {
               <img
                 src={logo}
                 alt="Percivalestimate Logo"
-                className="text-center w-[20px] h-[22px] mt-2"
+                className="text-center w-[30px] h-[30px] mt-2"
               />
 
               <div className="text-start lg:text-end ml-[2px]">

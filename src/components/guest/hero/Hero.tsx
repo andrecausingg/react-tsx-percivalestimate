@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-import heroImg from "../../../assets/images/hero/skyscrapers.jpg";
+import heroImg from "../../../assets/images/hero/hero-1.jpg";
 
 import { PiChartLineDown } from "react-icons/pi";
 import { TbMoneybag, TbCrane } from "react-icons/tb";
@@ -97,9 +98,12 @@ const Hero: React.FC = () => {
     <>
       <div className="overflow-hidden">
         <div
-          className="h-[600px] lg:h-[800px] bg-cover bg-no-repeat"
+          className="relative h-[600px] lg:h-[800px] bg-cover bg-no-repeat"
           style={{ backgroundImage: `url('${heroImg}')` }}
         >
+          <div
+            className="absolute inset-0 bg-black opacity-50"
+          />
           <div className="grid lg:grid-cols-2 pt-48 text-white md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto">
             <div>
               <h1
@@ -131,9 +135,12 @@ const Hero: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
               >
-                <button className="border-white border-2 py-2 px-4 hover:bg-greenClient hover:border-[#001B1B] ease-in duration-300">
+                <Link
+                  to="/services"
+                  className="border-white border-2 py-2 px-4 hover:bg-greenClient hover:border-[#001B1B] ease-in duration-300"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -157,7 +164,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
-                  pre-contract quantity surveying
+                  Pre-contract Quantity Surveying
                 </h3>
                 <p>
                   Provides Cost Planning in a progressive stage within your
@@ -184,7 +191,7 @@ const Hero: React.FC = () => {
                 <TbCrane className="w-16 h-16" />
               </div>
               <div className="mb-4 ml-4 w-4/5">
-                <h3 className="font-gilroyExtraBold">Value Engineering</h3>
+                <h3 className="font-gilroyExtraBold">Construction Take-Off</h3>
                 <p>
                   Helps reduce cost without sacrificing Quality with over 150
                   Contacts of different Suppliers and Subcontracts.
@@ -198,7 +205,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
-                  Post-Contract Quantity Surveying
+                  Post-contract Quantity Surveying
                 </h3>
                 <p>
                   Contract Administration and Evaluation of Billings and
@@ -212,7 +219,7 @@ const Hero: React.FC = () => {
             <div
               onMouseEnter={() => handleProjectHover()}
               onMouseLeave={() => handleProjectHover()}
-              className={`bg-greenClient w-full p-4 lg:px-12 lg:h-[200px] flex flex-col justify-center items-start ease-in duration-300 ${
+              className={`bg-greenClient w-1/2 p-4 lg:px-12 lg:h-[200px] flex flex-col justify-center items-start ease-in duration-300 ${
                 isProjectHeroHover
                   ? "opacity-1"
                   : isCostHeroHover
@@ -224,13 +231,16 @@ const Hero: React.FC = () => {
               <h1 className="text-4xl lg:text-7xl font-gilroyExtraBold ease-in duration-300">
                 {countProjects}
               </h1>
-              <p className="text-l">Completed Projects</p>
+              <div className="flex gap-1">
+                <p className="text-l">Completed</p>
+                <p>Projects</p>
+              </div>
             </div>
 
             <div
               onMouseEnter={() => handleCostHover()}
               onMouseLeave={() => handleCostHover()}
-              className={`bg-orangeClient w-full p-4 lg:px-12 flex flex-col justify-center lg:h-[200px] ease-in duration-300 ${
+              className={`bg-orangeClient  w-1/2 p-4 lg:px-12 flex flex-col justify-center lg:h-[200px] ease-in duration-300 ${
                 isProjectHeroHover
                   ? "opacity-[0.5]"
                   : isCostHeroHover

@@ -63,7 +63,7 @@ const Contact: React.FC<Props> = ({ onClose }) => {
 
     // Owner Email
     axios
-      .post("http://127.0.0.1:8000/api/send-email-owner", formData)
+      .post("https://percivalestimate.com/api/send-email-owner/", formData)
       .then((response) => {
         const { data } = response;
         if (data.message === "Email sent successfully to owner")
@@ -104,7 +104,7 @@ const Contact: React.FC<Props> = ({ onClose }) => {
 
     // Client Email
     axios
-      .post("http://127.0.0.1:8000/api/send-email-client", formData)
+      .post("https://percivalestimate.com/api/send-email-client/", formData)
       .then((response) => {
         const { data } = response;
         if (data.message === "Sent Successfully on Client Email") {

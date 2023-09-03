@@ -1,12 +1,13 @@
-import heroImg from "../../../assets/images/hero/skyscrapers.jpg";
+import heroImg from "../../../assets/images/hero/hero-2.jpg";
 
 const HeroProject: React.FC = () => {
   return (
     <>
       <div
-        className="h-[500px] bg-cover bg-no-repeat"
+        className="relative h-[500px] bg-cover bg-no-repeat bg-blend-darken bg-center"
         style={{ backgroundImage: `url('${heroImg}')` }}
       >
+        <div className="absolute inset-0 bg-black opacity-50" />
         <div className="grid lg:grid-cols-2 pt-48 text-white md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto">
           <div
             data-aos="slide-right"

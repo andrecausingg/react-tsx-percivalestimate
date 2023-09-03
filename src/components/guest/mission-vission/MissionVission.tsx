@@ -64,7 +64,7 @@ const MissionVission: React.FC = () => {
               <div className=" z-10 relative py-6 px-4 text-white font-gilroyLight">
                 <h1 className="text-3xl py-6 font-gilroyExtraBold">Vision</h1>
                 <p>
-                  <span className="text-orangeClient">#wepushourlimit</span> To
+                  <span className="text-orangeClient font-gilroyExtraBold">#wepush<span className="text-white">ourlimit</span></span> <br /> To
                   become your reliable partner in helping you craft and achieve
                   your construction dream and vision through our realistic cost
                   planning and our{" "}
@@ -113,8 +113,8 @@ const MissionVission: React.FC = () => {
               <div className="z-50 relative py-6 px-4 text-white font-gilroyLight">
                 <h1 className="text-3xl py-6 font-gilroyExtraBold">Mision</h1>
                 <p className="text-greenClient">
-                  <span>
-                    <span className="text-white">#Family</span>first
+                  <span className="font-gilroyExtraBold">
+                    <span className="text-white">#Family</span><span className="text-greenClient">first</span>
                   </span>{" "}
                   <br />
                   <span className="text-white font-gilroyExtraBold">
@@ -123,7 +123,7 @@ const MissionVission: React.FC = () => {
                   To give our employee a work-life balance and an output-based
                   setup under a Filipino brand so they can spend more time with
                   their family. <br /> <br />
-                  <span className="text-greenClient">
+                  <span className="text-greenClient font-gilroyExtraBold">
                     <span>#focus</span>
                     <span className="text-white">sa</span>goal
                   </span>{" "}

@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
     <>
       <div className="relative py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight text-white">
         <div
-          className="bg-cover bg-no-repeat h-[300px]"
+          className="bg-cover bg-center	 bg-no-repeat h-[300px]"
           style={{ backgroundImage: `url('${image1}')` }}
         >
           <div className="bg-greenClient absolute inset-0 opacity-[0.8] my-4 mx-6 lg:my-0 lg:mx-0 h-[300px]"></div>

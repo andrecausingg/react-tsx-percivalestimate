@@ -63,8 +63,8 @@ const Services: React.FC = () => {
           works and variations actually work, we can help you save a lot more
           during your construction stage period.
           <br /> <br />
-          We can negotiate your material needs. We can evaluate your
-          contractor's and/or supplier's billings. We can evaluate your
+          We can negotiate your material needs. <br /> We can evaluate your <br />
+          contractor's and/or supplier's billings. <br /> We can evaluate your 
           contractor's and/or supplier's variation for you.
         </>
       ),
@@ -124,8 +124,8 @@ const Services: React.FC = () => {
           data-aos-easing="ease-in-out"
         >
           <h1 className="text-3xl lg:text-4xl font-gilroyExtraBold text-greenClient">
-            What makes percivalestimator?
-          </h1> <br />
+            what makes <br /> percivalestimator?
+          </h1> <br /> <br />
           <p>
             <span className="text-orangeClient">
               <span className="text-greenClient">percival</span>
