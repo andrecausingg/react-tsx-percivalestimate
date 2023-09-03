@@ -136,16 +136,12 @@ const Projects: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
               >
-                
+                {/* Bg Center */}
                 {/* <div
                   className={`${
                     data.bgColorClass
                   } absolute inset-0 opacity-80 transition-transform transform duration-500 ease-linear ${
-                    hoverStates[index]
-                      ? "translate-y-0"
-                      : index === 4
-                      ? "translate-y-0"
-                      : "translate-y-full"
+                    index === 4 ? "" : "hidden"
                   }`}
                 ></div> */}
 
@@ -155,7 +151,7 @@ const Projects: React.FC = () => {
                       ? "translate-y-0 h-full"
                       : index === 4
                       ? "translate-y-0"
-                      : "translate-y-full bg-greenClient h-[100px] absolute bottom-[100px]"
+                      : "translate-y-full bg-greenClient h-[100px] absolute bottom-[80px]"
                   }
                   ${
                     index === 4
@@ -163,19 +159,38 @@ const Projects: React.FC = () => {
                       : ""
                   }`}
                 >
+                  {hoverStates[index] ? (
+                    <div
+                      className={`${
+                        index % 2 === 0 ? "bg-greenClient" : "bg-orangeClient"
+                      } opacity-80 w-full inset-0 absolute flex flex-col justify-center p-4 font-gilroyLight`}
+                    >
+                      {" "}
+                      <div>
+                        <h1 className="font-gilroyExtraBold text-xl">
+                          {data.place}
+                        </h1>{" "}
+                        <br />
+                        <span>{data.description}</span> <br /> <br />
+                        <span> {data.area}</span> <br /> <br />
+                        <span>{data.designer}</span> <br />
+                      </div>
+                    </div>
+                  ) : (
+                    <h1 className="uppercase font-gilroyExtraBold">
+                      {data.title}
+                      {index !== 4 ? (
+                        <span className="normal-case font-gilroyExtraBold">
+                          {data.subTitle}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </h1>
+                  )}
 
-                  <h1 className="uppercase font-gilroyExtraBold">
-                    {data.title} <br />
-                    {index !== 4 ? (
-                      <span className="normal-case font-gilroyExtraBold">
-                        {data.subTitle}
-                      </span>
-                    ) : (
-                      ""
-                    )}
-
-
-                    {index === 4 ? (
+                  {index === 4 ? (
+                    <div className="bg-greenClient opacity-80 w-full inset-0 absolute flex flex-col justify-center p-4 font-gilroyLight">
                       <div className="flex flex-col text-3xl">
                         <span className="normal-case font-gilroyLight">
                           {data.subTitle}
@@ -184,10 +199,10 @@ const Projects: React.FC = () => {
                           </span>
                         </span>
                       </div>
-                    ) : (
-                      ""
-                    )}
-                  </h1>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             ))}
