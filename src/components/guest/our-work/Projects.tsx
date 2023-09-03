@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
       bgColorClass: "bg-orangeClient",
       hoverColorClass: "bg-orangeClient",
       title: "retail",
-      place: "Pop Eyes",
+      place: "Popeyes",
       description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 200 sq.m.",
       designer: "Designed By: Grace Capati Architecture and Design",

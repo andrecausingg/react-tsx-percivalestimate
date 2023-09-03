@@ -37,12 +37,12 @@ const Header: React.FC = () => {
               <img
                 src={logo}
                 alt="Percivalestimate Logo"
-                className="text-center w-[20px] h-[22px]"
+                className="text-center w-[20px] h-[22px] mt-2"
               />
 
               <div className="text-start lg:text-end ml-[2px]">
-                <div className="flex flex-col item-center">
-                  <span className="text-xl font-gilroyLight">
+                <div className="flex flex-col item-center mt-2">
+                  <span className="text-2xl font-gilroyLight text-greenClient">
                     percival
                     <span className=" font-gilroyExtraBold font-black ">
                       estimate
