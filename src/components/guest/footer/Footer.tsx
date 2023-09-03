@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
       <div className="lg:border-t-[30px] border-t-[#001B1B]"></div>
       {/* Container */}
       <div className="mx-auto md:max-w-3xl xl:max-w-6xl py-4 px-6 lg:px-0 lg:py-8 text-greenClient font-gilroyLight">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
           <Link to="#" className="flex">
             <img
               src={logo}
@@ -98,17 +98,34 @@ const Footer: React.FC = () => {
             </h1>
 
             <div className="flex flex-col text-l lg:text-l mb-2">
-              <span>Phone: +63 912 1234 5678</span>
+              <span>
+                Address: 1611 AIC Burgundy Empire Tower ADB Avenue Ortigas
+                Center, Pasig City
+              </span>
+            </div>
+
+            <div className="flex flex-col text-l lg:text-l mb-2">
+              <span>Phone: +63 916 2047 165</span>
             </div>
 
             <div className="flex flex-col text-l lg:text-l mb-2">
               <span>Email: info@percivalestimate.com</span>
             </div>
+          </div>
+
+          {/* Whistleblower */}
+          <div className="flex flex-col">
+            <h1 className="text-orangeClient text-xl font-bold mb-4 font-gilroyExtraBold">
+              Whistleblower
+            </h1>
 
             <div className="flex flex-col text-l lg:text-l mb-2">
               <span>
-                Address: 1611 AIC Burgundy Empire Tower ADB Avenue Ortigas
-                Center, Pasig City
+                If our percivalestimator accepts bribe, you may contact us here.
+              </span>
+              <span className="cursor-pointer font-gilroyExtraBold underline">
+                {" "}
+                Let us know
               </span>
             </div>
           </div>

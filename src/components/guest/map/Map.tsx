@@ -50,7 +50,7 @@ const Map: React.FC = () => {
               <FaMobileButton className="w-10 h-10 bg-greenClient p-2 text-white" />
               <div className="text-xm ml-2">
                 <span>Phone</span>
-                <h5 className="font-gilroyExtraBold">+63 9123 456 789</h5>
+                <h5 className="font-gilroyExtraBold">+63 916 2047 165</h5>
               </div>
             </div>
             <div

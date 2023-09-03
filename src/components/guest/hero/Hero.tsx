@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
               >
-                <span className="opacity-[0.5]">
+                <span className="font-gilroyExtraBold">
                   Your reliable partner in Construction Cost Planning,
                   Construction Take-Off, Value Engineering, and Post-Contract
                   Quantity Surveying
@@ -152,8 +152,10 @@ const Hero: React.FC = () => {
             </h1>
 
             <div className="flex items-center">
-              <PiChartLineDown className="w-24 md:w-16 lg:w-20 h-24" />
-              <div className="mb-4 ml-4">
+              <div className="w-1/5">
+                <PiChartLineDown className="w-16 h-16" />
+              </div>
+              <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
                   pre-contract quantity surveying
                 </h3>
@@ -165,8 +167,10 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex items-center">
-              <TbMoneybag className="w-24 md:w-16 lg:w-20 h-24" />
-              <div className="mb-4 ml-4">
+              <div className="w-1/5">
+                <TbMoneybag className="w-16 h-16" />
+              </div>
+              <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">Value Engineering</h3>
                 <p>
                   Helps reduce cost without sacrificing Quality with over 150
@@ -176,8 +180,10 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex items-center">
-              <TbCrane className="w-24 md:w-16 lg:w-20 h-24" />
-              <div className="mb-4 ml-4">
+              <div className="w-1/5">
+                <TbCrane className="w-16 h-16" />
+              </div>
+              <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">Value Engineering</h3>
                 <p>
                   Helps reduce cost without sacrificing Quality with over 150
@@ -187,8 +193,10 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex items-center">
-              <FaPencilRuler className="w-12 h-12 md:w-8" />{" "}
-              <div className="mb-4 ml-4">
+              <div className="w-1/5 mx-auto">
+                <FaPencilRuler className=" w-14 h-14" />
+              </div>
+              <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
                   Post-Contract Quantity Surveying
                 </h3>

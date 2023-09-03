@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import image1 from "../../../assets/images/mission-vission/mv-1.jpg";
 import image2 from "../../../assets/images/mission-vission/mv-2.jpg";
+import image3 from "../../../assets/images/mission-vission/mv-3.jpg";
+import image4 from "../../../assets/images/mission-vission/mv-4.jpg";
 
 const MissionVission: React.FC = () => {
   const [isVisionHover, setVisionHover] = useState<boolean>(false);
@@ -31,7 +33,7 @@ const MissionVission: React.FC = () => {
       <div className="lg:grid lg:grid-cols-2 font-gilroyLight mt-24">
         <div
           className="hidden lg:block bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url('${image2}')` }}
+          style={{ backgroundImage: `url('${image4}')` }}
         ></div>
 
         <div className="lg:grid grid-cols-3 py-4 px-6 lg:p-0 overflow-hidden">
@@ -84,7 +86,6 @@ const MissionVission: React.FC = () => {
           </div>
 
           {/* Mision */}
-
           <div
             data-aos="flip-up"
             data-aos-delay="800"
@@ -103,7 +104,7 @@ const MissionVission: React.FC = () => {
             ? "opacity-[0.5]"
             : ""
         }`}
-              style={{ backgroundImage: `url('${image1}')` }}
+              style={{ backgroundImage: `url('${image2}')` }}
               onMouseEnter={() => handleMissionHover()}
               onMouseLeave={() => handleMissionHover()}
             >
@@ -153,7 +154,7 @@ const MissionVission: React.FC = () => {
                 ? "opacity-[0.5]"
                 : ""
             }`}
-              style={{ backgroundImage: `url('${image1}')` }}
+              style={{ backgroundImage: `url('${image3}')` }}
               onMouseEnter={() => handleCoreValuesHover()}
               onMouseLeave={() => handleCoreValuesHover()}
             >

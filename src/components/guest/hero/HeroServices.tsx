@@ -43,7 +43,7 @@ const HeroServices: React.FC = () => {
         <div className="flex flex-col items-start bg-white shadow-2xl border-t-8 border-t-[#001B1B] py-6 px-6 lg:px-24 md:w-1/2">
           <span className="uppercase">Call Us Today</span>
           <h1 className="text-orangeClient text-4xl font-gilroyExtraBold">
-            +63 9123 456 789
+            +63 916 2047 165
           </h1>
         </div>
 

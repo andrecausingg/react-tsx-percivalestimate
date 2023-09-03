@@ -1,7 +1,15 @@
 import { useState } from "react";
 
-import image1 from "../../../assets/images/our-works/our-works-1.jpg";
-import imageCenter from "../../../assets/images/our-works/our-works-center.jpg";
+import image1 from "../../../assets/images/projects/project-1.jpg";
+import image2 from "../../../assets/images/projects/project-2.png";
+import image3 from "../../../assets/images/projects/project-3.png";
+import image4 from "../../../assets/images/projects/project-4.png";
+import image6 from "../../../assets/images/projects/project-6.png";
+import image7 from "../../../assets/images/projects/project-7.png";
+import image8 from "../../../assets/images/projects/project-8.png";
+import image9 from "../../../assets/images/projects/project-9.png";
+
+import imageCenter from "../../../assets/images/projects/center.jpg";
 
 const Projects: React.FC = () => {
   const divData = [
@@ -9,29 +17,41 @@ const Projects: React.FC = () => {
       image: image1,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
-      title: "Pre-Contract Quantity Surveying",
-      subTitle: "HKT Warehouse",
+      title: "civic",
+      place: "Mandaluyong Arena",
+      description: "Scope of Works: Full Pre-Contract Quantity Surveying",
+      area: "Area: 8,000 sq.m.",
+      designer: "",
     },
     {
-      image: image1,
-      bgColorClass: "bg-greenClient",
-      hoverColorClass: "bg-greenClient",
-      title: "Full Pre-Contract Quantity Surveying",
-      subTitle: "Mandaluyong Arena",
+      image: image2,
+      bgColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-orangeClient",
+      title: "leisure",
+      place: "Batangas Event Center",
+      description: "Scope of Works: Full Pre-Contract Quantity Surveying",
+      area: "Area: 7,000 sq.m.",
+      designer: "Designed By: OneArc",
     },
     {
-      image: image1,
+      image: image3,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
-      title: "Pre-Contract Quantity Surveying",
-      subTitle: "Military Facility",
+      title: "government",
+      place: "Texas Building 6",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 1,700 sq.m.",
+      designer: "Designed By: Levy Dykema Architects",
     },
     {
-      image: image1,
-      bgColorClass: "bg-greenClient",
-      hoverColorClass: "bg-greenClient",
-      title: "Full Pre-Contract Quantity Surveying",
-      subTitle: "Batangas Event Center",
+      image: image4,
+      bgColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-orangeClient",
+      title: "military",
+      place: "Military Facility",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Confidential",
+      designer: "Designed By: An International Engineering Firm",
     },
     {
       image: imageCenter,
@@ -42,32 +62,44 @@ const Projects: React.FC = () => {
       subTitle1: "estimate",
     },
     {
-      image: image1,
-      bgColorClass: "bg-greenClient",
-      hoverColorClass: "bg-greenClient",
-      title: "Pre-Contract Quantity Surveying",
-      subTitle: "Anyana Church",
+      image: image6,
+      bgColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-orangeClient",
+      title: "hotel",
+      place: "Mindanao Hotel and Convention Center",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 4,000 sq.m.",
+      designer: "Designed By: OneArc",
     },
     {
-      image: image1,
+      image: image7,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
-      title: "Pre-Contract Quantity Surveying",
-      subTitle: "Military Facility",
+      title: "retail",
+      place: "HKT Philippines Warehouse",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 3,000 sq.m.",
+      designer: "Designed By: Global Design Inc.",
     },
     {
-      image: image1,
-      bgColorClass: "bg-greenClient",
-      hoverColorClass: "bg-greenClient",
-      title: "Full Pre-Contract Quantity Surveying",
-      subTitle: "Batangas Event Center",
+      image: image8,
+      bgColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-orangeClient",
+      title: "retail",
+      place: "",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 200 sq.m.",
+      designer: "Designed By: Grace Capati Architecture and Design",
     },
     {
-      image: image1,
+      image: image9,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
-      title: "Full Pre-Contract Quantity Surveying",
-      subTitle: "Batangas Event Center",
+      title: "retail",
+      place: "Lucena Commercial Building",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 1,000 sq.m.",
+      designer: "Designed By: Amber Builders",
     },
     // Add more div data objects here
   ];
@@ -104,7 +136,8 @@ const Projects: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
               >
-                <div
+                
+                {/* <div
                   className={`${
                     data.bgColorClass
                   } absolute inset-0 opacity-80 transition-transform transform duration-500 ease-linear ${
@@ -114,7 +147,7 @@ const Projects: React.FC = () => {
                       ? "translate-y-0"
                       : "translate-y-full"
                   }`}
-                ></div>
+                ></div> */}
 
                 <div
                   className={`z-10 py-4 px-4 font-gilroyLight transition-transform transform duration-500 ease-linear w-full ${
@@ -122,7 +155,7 @@ const Projects: React.FC = () => {
                       ? "translate-y-0 h-full"
                       : index === 4
                       ? "translate-y-0"
-                      : "translate-y-full bg-greenClient opacity-80 h-[100px] absolute bottom-[100px]"
+                      : "translate-y-full bg-greenClient h-[100px] absolute bottom-[100px]"
                   }
                   ${
                     index === 4
@@ -130,7 +163,8 @@ const Projects: React.FC = () => {
                       : ""
                   }`}
                 >
-                  <h1 className="uppercase">
+
+                  <h1 className="uppercase font-gilroyExtraBold">
                     {data.title} <br />
                     {index !== 4 ? (
                       <span className="normal-case font-gilroyExtraBold">
@@ -139,6 +173,8 @@ const Projects: React.FC = () => {
                     ) : (
                       ""
                     )}
+
+
                     {index === 4 ? (
                       <div className="flex flex-col text-3xl">
                         <span className="normal-case font-gilroyLight">

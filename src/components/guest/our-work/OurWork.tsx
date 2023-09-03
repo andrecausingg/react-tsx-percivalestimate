@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import image1 from "../../../assets/images/our-works/our-works-1.jpg";
+import image1 from "../../../assets/images/our-works/our-works-1.png";
+import image2 from "../../../assets/images/our-works/our-works-2.jpg";
+import image3 from "../../../assets/images/our-works/our-works-3.png";
+import image4 from "../../../assets/images/our-works/our-works-4.png";
+import image6 from "../../../assets/images/our-works/our-works-6.png";
 import imageCenter from "../../../assets/images/our-works/our-works-center.jpg";
 
 const OurWork: React.FC = () => {
@@ -9,27 +13,27 @@ const OurWork: React.FC = () => {
     {
       image: image1,
       bgColorClass: "bg-greenClient",
-      hoverColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-greenClient",
       title: "Pre-Contract Quantity Surveying",
-      subTitle: "HKT Warehouse",
+      subTitle: "Laguna Warehouse 3",
     },
     {
-      image: image1,
-      bgColorClass: "bg-orangeClient",
-      hoverColorClass: "bg-orangeClient",
+      image: image2,
+      bgColorClass: "bg-greenClient",
+      hoverColorClass: "bg-greenClient",
       title: "Full Pre-Contract Quantity Surveying",
       subTitle: "Mandaluyong Arena",
     },
     {
-      image: image1,
+      image: image3,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "Pre-Contract Quantity Surveying",
       subTitle: "Military Facility",
     },
     {
-      image: image1,
-      bgColorClass: "bg-orangeClient",
+      image: image4,
+      bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "Full Pre-Contract Quantity Surveying",
       subTitle: "Batangas Event Center",
@@ -43,8 +47,8 @@ const OurWork: React.FC = () => {
       subTitle1: "estimate",
     },
     {
-      image: image1,
-      bgColorClass: "bg-orangeClient",
+      image: image6,
+      bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "Pre-Contract Quantity Surveying",
       subTitle: "Anyana Church",
@@ -73,115 +77,69 @@ const OurWork: React.FC = () => {
           </h1>
         </div>
 
-        {/* Mobile */}
-        <div className="lg:hidden">
-          <div className="flex items-center">
-            <div>
-              <img src={image1} alt="" />
-            </div>
-            <div>
-              <img src={image1} alt="" />
-            </div>
-          </div>
-
-          <div
-            className={`bg-cover bg-no-repeat relative w-full ease-in duration-300 h-[300px]`}
-            style={{ backgroundImage: `url('${imageCenter}')` }}
-          >
-            <div className="bg-greenClient absolute inset-0 opacity-[0.8]"></div>
-            <div className="z-10 relative py-6 px-4 font-gilroyLight flex flex-col justify-center items-center h-[300px] text-center">
-              <h1 className="py-6">
-                PROJECTS <br />{" "}
-                <span>
-                  percival
-                  <span className=" font-gilroyExtraBold">estimate</span>
-                </span>{" "}
-              </h1>
-              <Link to="#" className="py-2 px-4 bg-white text-black">
-                +
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <div>
-              <img src={image1} alt="" />
-            </div>
-            <div>
-              <img src={image1} alt="" />
-            </div>
-          </div>
-        </div>
-
-        {/* Desktop */}
-        <div className="hidden lg:block">
-          <div className="grid grid-cols-3 gap-4">
-            {divData.map((data, index) => (
+        <div className="grid md:grid-cols-3 md:gap-4">
+          {divData.map((data, index) => (
+            <div
+              key={index}
+              className={`bg-cover bg-no-repeat relative w-full ease-in duration-300 flex justify-center items-center overflow-hidden h-[300px]`}
+              style={{ backgroundImage: `url('${data.image}')` }}
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => handleHover(-1)} // Reset hover state on mouse leave
+              data-aos="zoom-out-down"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <div
-                key={index}
-                className={`bg-cover bg-no-repeat relative w-full ease-in duration-300 flex justify-center items-center overflow-hidden h-[300px]`}
-                style={{ backgroundImage: `url('${data.image}')` }}
-                onMouseEnter={() => handleHover(index)}
-                onMouseLeave={() => handleHover(-1)} // Reset hover state on mouse leave
-                data-aos="zoom-out-down"
-                data-aos-delay="500"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                className={`${
+                  data.bgColorClass
+                } absolute inset-0 opacity-80 transition-transform transform duration-300 ease-linear ${
+                  hoverStates[index]
+                    ? "translate-y-0"
+                    : index === 4
+                    ? "translate-y-0"
+                    : "translate-y-full"
+                }`}
+              ></div>
+              <div
+                className={`z-10 absolute py-6 px-4 font-gilroyLight text-center inset-0 transition-transform transform duration-300 ease-linear flex flex-col justify-center ${
+                  hoverStates[index]
+                    ? "translate-y-0"
+                    : index === 4
+                    ? "translate-y-0"
+                    : "translate-y-full"
+                }`}
               >
-                <div
-                  className={`${
-                    data.bgColorClass
-                  } absolute inset-0 opacity-80 transition-transform transform duration-300 ease-linear ${
-                    hoverStates[index]
-                      ? "translate-y-0"
-                      : index === 4
-                      ? "translate-y-0"
-                      : "translate-y-full"
-                  }`}
-                ></div>
-                <div
-                  className={`z-10 absolute py-6 px-4 font-gilroyLight text-center inset-0 transition-transform transform duration-300 ease-linear flex flex-col justify-center ${
-                    hoverStates[index]
-                      ? "translate-y-0"
-                      : index === 4
-                      ? "translate-y-0"
-                      : "translate-y-full"
-                  }`}
-                >
-                  <h1 className="uppercase">
-                    {data.title} <br />
-                    {index !== 4 ? (
-                      <span className="normal-case font-gilroyExtraBold">
+                <h1 className="uppercase">
+                  {data.title} <br />
+                  {index !== 4 ? (
+                    <span className="normal-case font-gilroyExtraBold">
+                      {data.subTitle}
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                  {index === 4 ? (
+                    <div className="flex flex-col">
+                      <span className="normal-case font-gilroyLight">
                         {data.subTitle}
-                      </span>
-                    ) : (
-                      ""
-                    )}
-                    {index === 4 ? (
-                      <div className="flex flex-col">
-                        <span className="normal-case font-gilroyLight">
-                          {data.subTitle}
-                          <span className="font-gilroyExtraBold">
-                            {data.subTitle1}
-                          </span>
+                        <span className="font-gilroyExtraBold">
+                          {data.subTitle1}
                         </span>
-                        <div className="mt-4">
-                          <Link
-                            to="#"
-                            className=" py-2 px-4 bg-white text-black"
-                          >
-                            +
-                          </Link>
-                        </div>
+                      </span>
+                      <div className="mt-4">
+                        <Link to="#" className=" py-2 px-4 bg-white text-black">
+                          +
+                        </Link>
                       </div>
-                    ) : (
-                      ""
-                    )}
-                  </h1>
-                </div>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </h1>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
