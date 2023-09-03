@@ -22,13 +22,7 @@ const HeroProject: React.FC = () => {
               data-aos-delay="300"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-            >
-              <span className="opacity-[0.5]">
-                Your reliable partner in Construction Cost Planning,
-                Construction Take-Off, Value Engineering, and Post-Contract
-                Quantity Surveying
-              </span>
-            </div>
+            ></div>
           </div>
         </div>
       </div>

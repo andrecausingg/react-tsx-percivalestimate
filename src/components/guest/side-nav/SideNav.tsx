@@ -25,7 +25,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform`}
     >
-      <div className="flex flex-col text-white px-7 py-3 text-4xl">
+      <div className="flex flex-col text-white px-7 py-3 text-3xl h-3/4">
         <Link to="#" className="flex item-center">
           <img
             src={logo}

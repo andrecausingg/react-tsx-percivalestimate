@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import image1 from "../../../assets/images/contact-us/contact-us-1.jpg";
 
 const ContactUs: React.FC = () => {
-
   return (
     <>
       <div className="relative py-4 px-6 lg:p-0 mx-auto mt-24 font-gilroyLight text-white">
