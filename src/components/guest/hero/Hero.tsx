@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
               >
                 <span className="font-gilroyExtraBold">
                   Your reliable partner in Construction Cost Planning,
-                  Construction Take-Off, Value Engineering, and Post-Contract
+                  Construction <br /> Take-Off, Value Engineering, and Post-Contract
                   Quantity Surveying
                 </span>
               </div>
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
             data-aos-easing="ease-in-out"
           >
             <h1 className="text-orangeClient text-2xl font-gilroyExtraBold mb-6">
-              Cost-Saving Service
+              Cost-Saving Services
             </h1>
 
             <div className="flex items-center">
@@ -164,7 +164,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
-                  Pre-contract Quantity Surveying
+                  Pre-Contract Quantity Surveying
                 </h3>
                 <p>
                   Provides Cost Planning in a progressive stage within your
@@ -181,7 +181,7 @@ const Hero: React.FC = () => {
                 <h3 className="font-gilroyExtraBold">Value Engineering</h3>
                 <p>
                   Helps reduce cost without sacrificing Quality with over 150
-                  Contacts of different Suppliers and Subcontracts.
+                  Contacts of different Suppliers and subcontractors.
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ const Hero: React.FC = () => {
                 <TbCrane className="w-16 h-16" />
               </div>
               <div className="mb-4 ml-4 w-4/5">
-                <h3 className="font-gilroyExtraBold">Construction Take-Off</h3>
+                <h3 className="font-gilroyExtraBold">Quantity Take-Off of CSA and MEPFS</h3>
                 <p>
                   Helps reduce cost without sacrificing Quality with over 150
                   Contacts of different Suppliers and Subcontracts.

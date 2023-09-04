@@ -63,8 +63,9 @@ const Services: React.FC = () => {
           works and variations actually work, we can help you save a lot more
           during your construction stage period.
           <br /> <br />
-          We can negotiate your material needs. <br /> We can evaluate your <br />
-          contractor's and/or supplier's billings. <br /> We can evaluate your 
+          We can negotiate your material needs. <br /> We can evaluate your{" "}
+          <br />
+          contractor's and/or supplier's billings. <br /> We can evaluate your
           contractor's and/or supplier's variation for you.
         </>
       ),
@@ -112,8 +113,8 @@ const Services: React.FC = () => {
             <span className="font-gilroyExtraBold text-greenClient">
               estimate
             </span>
-            , we value the beauty of architecture and align that beauty with
-            your budget.
+            , we value the beauty of architecture and we are inclined to align
+            that beauty with your budget.
           </p>
         </div>
 
@@ -125,7 +126,8 @@ const Services: React.FC = () => {
         >
           <h1 className="text-3xl lg:text-4xl font-gilroyExtraBold text-greenClient">
             what makes <br /> percivalestimator?
-          </h1> <br /> <br />
+          </h1>{" "}
+          <br /> <br />
           <p>
             <span className="text-orangeClient">
               <span className="text-greenClient">percival</span>

@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
       image: image7,
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
-      title: "retail",
+      title: "warehouse",
       place: "Laguna Warehouse 3",
       description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 3,000 sq.m.",

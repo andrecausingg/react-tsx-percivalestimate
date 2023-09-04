@@ -51,7 +51,7 @@ const OurWork: React.FC = () => {
       bgColorClass: "bg-greenClient",
       hoverColorClass: "bg-greenClient",
       title: "Pre-Contract Quantity Surveying",
-      subTitle: "Anyana Church",
+      subTitle: "Mindanao Hotel and Convention Center",
     },
     // Add more div data objects here
   ];
