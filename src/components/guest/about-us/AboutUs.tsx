@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import image1 from "../../../assets/images/about-us/about-us-1.jpg";
 import image2 from "../../../assets/images/about-us/about-us-2.jpg";
 
@@ -76,9 +78,9 @@ const AboutUs: React.FC = () => {
             We did it because we care. We do it because we love it.
           </p>
           <div className="mt-4">
-            <button className="py-2 px-4 bg-[#0f2c2c] hover:bg-greenClient ease-in duration-300 text-white font-gilroyExtraBold">
+            <Link to="/projects" className="py-2 px-4 bg-[#0f2c2c] hover:bg-greenClient ease-in duration-300 text-white font-gilroyExtraBold">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
 

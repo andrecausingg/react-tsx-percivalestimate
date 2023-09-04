@@ -101,9 +101,7 @@ const Hero: React.FC = () => {
           className="relative h-[600px] lg:h-[800px] bg-cover bg-no-repeat"
           style={{ backgroundImage: `url('${heroImg}')` }}
         >
-          <div
-            className="absolute inset-0 bg-black opacity-50"
-          />
+          <div className="absolute inset-0 bg-black opacity-50" />
           <div className="grid lg:grid-cols-2 pt-48 text-white md:max-w-3xl xl:max-w-6xl py-4 px-6 mx-auto">
             <div>
               <h1
@@ -123,8 +121,8 @@ const Hero: React.FC = () => {
               >
                 <span className="font-gilroyExtraBold">
                   Your reliable partner in Construction Cost Planning,
-                  Construction <br /> Take-Off, Value Engineering, and Post-Contract
-                  Quantity Surveying
+                  Construction <br /> Take-Off, Value Engineering, and
+                  Post-Contract Quantity Surveying
                 </span>
               </div>
 
@@ -190,12 +188,9 @@ const Hero: React.FC = () => {
               <div className="w-1/5">
                 <TbCrane className="w-16 h-16" />
               </div>
-              <div className="mb-4 ml-4 w-4/5">
-                <h3 className="font-gilroyExtraBold">Quantity Take-Off of CSA and MEPFS</h3>
-                <p>
-                  Helps reduce cost without sacrificing Quality with over 150
-                  Contacts of different Suppliers and Subcontracts.
-                </p>
+              <div className="mb-4 ml-7 w-4/5">
+                <h3 className="font-gilroyExtraBold">Construction Take-Off</h3>
+                <p>Quantity Take-off of CSA and MEPFS</p>
               </div>
             </div>
 
@@ -205,7 +200,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="mb-4 ml-4 w-4/5">
                 <h3 className="font-gilroyExtraBold">
-                  Post-contract Quantity Surveying
+                  Post-Contract Quantity Surveying
                 </h3>
                 <p>
                   Contract Administration and Evaluation of Billings and

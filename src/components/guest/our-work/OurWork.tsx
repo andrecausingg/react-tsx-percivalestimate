@@ -128,7 +128,7 @@ const OurWork: React.FC = () => {
                         </span>
                       </span>
                       <div className="mt-4">
-                        <Link to="/services" className=" py-2 px-4 bg-white text-black">
+                        <Link to="/projects" className=" py-2 px-4 bg-white text-black">
                           +
                         </Link>
                       </div>

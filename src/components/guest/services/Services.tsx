@@ -63,10 +63,9 @@ const Services: React.FC = () => {
           works and variations actually work, we can help you save a lot more
           during your construction stage period.
           <br /> <br />
-          We can negotiate your material needs. <br /> We can evaluate your{" "}
-          <br />
-          contractor's and/or supplier's billings. <br /> We can evaluate your
-          contractor's and/or supplier's variation for you.
+          We can negotiate your material needs. <br />
+          We can evaluate your contractor's and/or supplier's billings. <br />
+          We can evaluate your contractor's and/or supplier's variation for you.
         </>
       ),
     },
