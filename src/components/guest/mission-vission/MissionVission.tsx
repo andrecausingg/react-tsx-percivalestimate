@@ -111,7 +111,7 @@ const MissionVission: React.FC = () => {
               <div className="bg-orangeClient absolute inset-0 opacity-[0.8]"></div>
 
               <div className="z-50 relative py-6 px-4 text-white font-gilroyLight">
-                <h1 className="text-3xl py-6 font-gilroyExtraBold">Mision</h1>
+                <h1 className="text-3xl py-6 font-gilroyExtraBold">Mission</h1>
                 <p className="text-greenClient">
                   <span className="font-gilroyExtraBold">
                     <span className="text-white">#Family</span><span className="text-greenClient">first</span>

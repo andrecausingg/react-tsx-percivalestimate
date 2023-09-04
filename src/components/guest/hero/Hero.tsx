@@ -188,7 +188,7 @@ const Hero: React.FC = () => {
               <div className="w-1/5">
                 <TbCrane className="w-16 h-16" />
               </div>
-              <div className="mb-4 ml-7 w-4/5">
+              <div className="mb-4 ml-4 lg:ml-7 w-4/5">
                 <h3 className="font-gilroyExtraBold">Construction Take-Off</h3>
                 <p>Quantity Take-off of CSA and MEPFS</p>
               </div>

@@ -17,7 +17,7 @@ interface ErrorData {
   messagesErr: string;
 }
 
-interface FormData {
+interface Data {
   firstName: string;
   lastName: string;
   email: string;
@@ -35,7 +35,7 @@ const Contact: React.FC<Props> = ({ onClose }) => {
     messagesErr: "",
   });
 
-  const [formData, setFormData] = useState<FormData>({
+  const [data, setData] = useState<Data>({
     firstName: "",
     lastName: "",
     email: "",
@@ -47,29 +47,75 @@ const Contact: React.FC<Props> = ({ onClose }) => {
   const [isShowMessage, setShowMessage] = useState(false);
   const [isShowErrMessage, setShowErrMessage] = useState(false);
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
+  const handleFirstName = (e: ChangeEvent<HTMLInputElement>) => {
+    setData((prevData) => ({
+      ...prevData,
+      firstName: e.target.value,
+    }));
+  };
+
+  const handleLastName = (e: ChangeEvent<HTMLInputElement>) => {
+    setData((prevData) => ({
+      ...prevData,
+      lastName: e.target.value,
+    }));
+  };
+
+  const handleEmail = (e: ChangeEvent<HTMLInputElement>) => {
+    setData((prevData) => ({
+      ...prevData,
+      email: e.target.value,
+    }));
+  };
+
+  const handleContactNumber = (e: ChangeEvent<HTMLInputElement>) => {
+    setData((prevData) => ({
+      ...prevData,
+      contactNumber: e.target.value,
+    }));
+  };
+
+  const handleMessage = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    setData((prevData) => ({
+      ...prevData,
+      messages: e.target.value,
     }));
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setClickSubmitMessage(true);
+    // setClickSubmitMessage(true);
+
+    // console.log("First Name:" + data.firstName);
+    // console.log("Last Name:" + data.lastName);
+    // console.log("Email:" + data.email);
+    // console.log("Contact Number:" + data.contactNumber);
+    // console.log("Message:" + data.messages);
+
+    const formData = new FormData();
+    formData.append("firstName", data.firstName);
+    formData.append("lastName", data.lastName);
+    formData.append("email", data.email);
+    formData.append("contactNumber", data.contactNumber);
+    formData.append("messages", data.messages);
+
+    // console.log(formData);
 
     // Owner Email
     axios
-      .post("https://percivalestimate.com/api/send-email-owner/", formData)
+      .post("https://percivalestimate.com/api/send-email-owner", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
       .then((response) => {
+        console.log(response);
         const { data } = response;
         if (data.message === "Email sent successfully to owner")
           console.log(data.message);
       })
       .catch((error) => {
+        // console.log(error);
         if (
           error.response &&
           error.response.data &&
@@ -104,32 +150,41 @@ const Contact: React.FC<Props> = ({ onClose }) => {
 
     // Client Email
     axios
-      .post("https://percivalestimate.com/api/send-email-client/", formData)
+      .post("https://percivalestimate.com/api/send-email-client", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
       .then((response) => {
+        console.log(response);
         const { data } = response;
         if (data.message === "Sent Successfully on Client Email") {
           console.log(data.message);
-        }
-        setClickSubmitMessage(false);
-        setErrorData({
-          firstNameErr: "",
-          lastNameErr: "",
-          emailErr: "",
-          contactNumberErr: "",
-          messagesErr: "",
-        });
+          setClickSubmitMessage(false);
+          setErrorData({
+            firstNameErr: "",
+            lastNameErr: "",
+            emailErr: "",
+            contactNumberErr: "",
+            messagesErr: "",
+          });
 
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          contactNumber: "",
-          messages: "",
-        });
-        setShowMessage(true);
-        setTimeout(() => setShowMessage(false), 3000);
+          setData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            contactNumber: "",
+            messages: "",
+          });
+          setShowMessage(true);
+          setTimeout(() => {
+            setShowMessage(false);
+            onClose(); // Call onClose() after setShowMessage(false)
+          }, 3000);
+        }
       })
       .catch(() => {
+        // console.log(error);
         setShowErrMessage(false);
         // Handle errors
       });
@@ -181,11 +236,8 @@ const Contact: React.FC<Props> = ({ onClose }) => {
                 <div className="mt-2">
                   <input
                     type="text"
-                    name="firstName"
-                    id="first-name"
-                    autoComplete="given-name"
-                    value={formData.firstName}
-                    onChange={handleChange}
+                    value={data.firstName}
+                    onInput={handleFirstName}
                     className="block w-full rounded-md border-0 py-2 px-5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:border-blue-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -204,11 +256,8 @@ const Contact: React.FC<Props> = ({ onClose }) => {
                 <div className="mt-2">
                   <input
                     type="text"
-                    name="lastName"
-                    id="last-name"
-                    autoComplete="family-name"
-                    value={formData.lastName}
-                    onChange={handleChange}
+                    value={data.lastName}
+                    onInput={handleLastName}
                     className="block w-full rounded-md border-0 py-2 px-5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:border-blue-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -228,12 +277,9 @@ const Contact: React.FC<Props> = ({ onClose }) => {
                 </span>
                 <div className="mt-2">
                   <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    value={formData.email}
-                    onChange={handleChange}
+                    type="email"
+                    value={data.email}
+                    onInput={handleEmail}
                     className="block w-full rounded-md border-0 py-2 px-5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:border-blue-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -252,11 +298,8 @@ const Contact: React.FC<Props> = ({ onClose }) => {
                 <div className="mt-2">
                   <input
                     type="text"
-                    name="contactNumber"
-                    id="contactNumber"
-                    autoComplete="social Media"
-                    value={formData.contactNumber}
-                    onChange={handleChange}
+                    value={data.contactNumber}
+                    onInput={handleContactNumber}
                     className="block w-full rounded-md border-0 py-2 px-5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:border-blue-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -275,11 +318,8 @@ const Contact: React.FC<Props> = ({ onClose }) => {
               </span>
               <div className="mt-2">
                 <textarea
-                  name="messages"
-                  id="message"
-                  autoComplete="off"
-                  value={formData.messages}
-                  onChange={handleChange}
+                  value={data.messages}
+                  onInput={handleMessage}
                   className="h-36 resize-none block w-full rounded-md border-0 py-2 px-5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:border-blue-500 sm:text-sm sm:leading-6"
                 ></textarea>
               </div>
