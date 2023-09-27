@@ -8,6 +8,8 @@ import image6 from "../../../assets/images/projects/project-6.png";
 import image7 from "../../../assets/images/projects/project-7.png";
 import image8 from "../../../assets/images/projects/project-8.png";
 import image9 from "../../../assets/images/projects/project-9.png";
+import image10 from "../../../assets/images/projects/project-10.png";
+import image11 from "../../../assets/images/projects/project-11.png";
 
 import imageCenter from "../../../assets/images/projects/center.jpg";
 
@@ -19,7 +21,7 @@ const Projects: React.FC = () => {
       hoverColorClass: "bg-greenClient",
       title: "civic",
       place: "Mandaluyong Arena",
-      description: "Scope of Works: Full Pre-Contract Quantity Surveying",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 8,000 sq.m.",
       designer: "",
     },
@@ -29,7 +31,7 @@ const Projects: React.FC = () => {
       hoverColorClass: "bg-orangeClient",
       title: "leisure",
       place: "Batangas Event Center",
-      description: "Scope of Works: Full Pre-Contract Quantity Surveying",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 7,000 sq.m.",
       designer: "Designed By: OneArc",
     },
@@ -100,6 +102,26 @@ const Projects: React.FC = () => {
       description: "Scope of Works: Pre-Contract Quantity Surveying",
       area: "Area: 1,000 sq.m.",
       designer: "Designed By: Amber Builders",
+    },
+    {
+      image: image10,
+      bgColorClass: "bg-orangeClient",
+      hoverColorClass: "bg-orangeClient",
+      title: "land development",
+      place: "One-Stop Shop",
+      description: "Scope of works: Pre-Contract Quantity Surveying",
+      area: "Area: 34,000 sq.m.",
+      designer: "",
+    },
+    {
+      image: image11,
+      bgColorClass: "bg-greenClient",
+      hoverColorClass: "bg-greenClient",
+      title: "leisure",
+      place: "Pampanga Waterpark",
+      description: "Scope of Works: Pre-Contract Quantity Surveying",
+      area: "Area: 45,000 sq.m.",
+      designer: "",
     },
     // Add more div data objects here
   ];

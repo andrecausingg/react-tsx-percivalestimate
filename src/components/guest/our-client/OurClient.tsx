@@ -12,7 +12,7 @@ import clientLogo7 from "../../../assets/images/client-logo/7.jpg";
 import clientLogo8 from "../../../assets/images/client-logo/8.jpg";
 import clientLogo9 from "../../../assets/images/client-logo/9.png";
 import clientLogo10 from "../../../assets/images/client-logo/10.jpg";
-import clientLogo11 from "../../../assets/images/client-logo/11.jpg";
+// import clientLogo11 from "../../../assets/images/client-logo/11.jpg";
 import clientLogo12 from "../../../assets/images/client-logo/12.png";
 import clientLogo13 from "../../../assets/images/client-logo/13.jpg";
 
@@ -28,7 +28,7 @@ const OurClient = () => {
     clientLogo8,
     clientLogo9,
     clientLogo10,
-    clientLogo11,
+    // clientLogo11,
     clientLogo12,
     clientLogo13,
   ];
