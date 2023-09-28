@@ -10,6 +10,7 @@ import Map from "../../components/guest/map/Map";
 import MissionVission from "../../components/guest/mission-vission/MissionVission";
 import OurClient from "../../components/guest/our-client/OurClient";
 import OurWork from "../../components/guest/our-work/OurWork";
+import StockExchange from "../../components/guest/stock-exchange/StockExchange";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
+      <StockExchange />
       <AboutUs />
       <MissionVission />
       <OurWork />
