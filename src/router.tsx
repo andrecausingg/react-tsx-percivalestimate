@@ -26,11 +26,11 @@ const routerConfig: Record<string, RouteConfig[]> = {
           element: <Home />,
         },
         {
-          path: "/projects", // Empty path, as it should match the parent's path
+          path: "projects", // Empty path, as it should match the parent's path
           element: <Project />,
         },
         {
-          path: "/services", // Empty path, as it should match the parent's path
+          path: "services", // Empty path, as it should match the parent's path
           element: <Services />,
         },
       ],

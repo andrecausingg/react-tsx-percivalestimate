@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo/percivalestimate-logo.png";
+import andreCausingLogo from "../../../assets/images/andre-causing-logo/andre-causing-logo.png";
+
 
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BiCopyright } from "react-icons/bi";
@@ -159,11 +161,18 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="text-white font-gilroyLight bg-gray-500">
-        <div className="flex item-center mx-auto md:max-w-3xl xl:max-w-6xl py-2 px-6 lg:px-0 ">
-          <BiCopyright className="w-5 h-5 " />
-          <span>
-            2023 percivale<span className="font-gilroyExtraBold">estimate</span>
-          </span>
+        <div className="flex justify-between items-center mx-auto md:max-w-3xl xl:max-w-6xl">
+          <div className="flex item-center  py-2 px-6 lg:px-0 ">
+            <BiCopyright className="w-5 h-5 " />
+            <span>
+              2023 percivale
+              <span className="font-gilroyExtraBold">estimate</span>
+            </span>
+          </div>
+          <div className="flex items-center">
+            <img className="mr-2" src={andreCausingLogo} alt="Andre Causing Logo"  width={'36px'} />
+            <Link target="_blank" rel="noopener noreferrer" to="https://andrecausing.com/">Powered by: andrecausing.com</Link>
+          </div>
         </div>
       </div>
 
