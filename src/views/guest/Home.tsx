@@ -8,9 +8,9 @@ import Footer from "../../components/guest/footer/Footer";
 import Hero from "../../components/guest/hero/Hero";
 import Map from "../../components/guest/map/Map";
 import MissionVission from "../../components/guest/mission-vission/MissionVission";
-import OurClient from "../../components/guest/our-client/OurClient";
+// import OurClient from "../../components/guest/our-client/OurClient";
 import OurWork from "../../components/guest/our-work/OurWork";
-import StockExchange from "../../components/guest/stock-exchange/StockExchange";
+// import StockExchange from "../../components/guest/stock-exchange/StockExchange";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -23,12 +23,12 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <StockExchange />
+      {/* <StockExchange /> */}
       <AboutUs />
       <MissionVission />
       <OurWork />
       <Map />
-      <OurClient />
+      {/* <OurClient /> */}
       <ContactUs />
       <Footer />
     </>
