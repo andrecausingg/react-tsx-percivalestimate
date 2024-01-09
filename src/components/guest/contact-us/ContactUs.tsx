@@ -26,7 +26,7 @@ const ContactUs: React.FC = () => {
             <h1 className="font-gilroyExtraBold">
               Free consultation with exceptional quality
             </h1>
-            <span>Just one call away: +63 916 2047 165</span>
+            <span>Just one call away: +63 976 4274 653</span>
             <div className="mt-4">
               <button
                 onClick={handleContact}

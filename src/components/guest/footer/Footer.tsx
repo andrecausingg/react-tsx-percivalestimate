@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col text-l lg:text-l mb-2">
-              <span>Phone: +63 916 2047 165</span>
+              <span>Phone: +63 976 4274 653</span>
             </div>
 
             <div className="flex flex-col text-l lg:text-l mb-2">
