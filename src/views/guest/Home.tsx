@@ -1,15 +1,16 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import UnderUpgrade from "../../components/guest/under-upgrade/UnderUpgrade";
 
-import AboutUs from "../../components/guest/about-us/AboutUs";
-import ContactUs from "../../components/guest/contact-us/ContactUs";
-import Footer from "../../components/guest/footer/Footer";
-import Hero from "../../components/guest/hero/Hero";
-import Map from "../../components/guest/map/Map";
-import MissionVission from "../../components/guest/mission-vission/MissionVission";
+// import AboutUs from "../../components/guest/about-us/AboutUs";
+// import ContactUs from "../../components/guest/contact-us/ContactUs";
+// import Footer from "../../components/guest/footer/Footer";
+// import Hero from "../../components/guest/hero/Hero";
+// import Map from "../../components/guest/map/Map";
+// import MissionVission from "../../components/guest/mission-vission/MissionVission";
 // import OurClient from "../../components/guest/our-client/OurClient";
-import OurWork from "../../components/guest/our-work/OurWork";
+// import OurWork from "../../components/guest/our-work/OurWork";
 // import StockExchange from "../../components/guest/stock-exchange/StockExchange";
 
 const Home: React.FC = () => {
@@ -22,15 +23,16 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Hero />
+      <UnderUpgrade />
+      {/* <Hero /> */}
       {/* <StockExchange /> */}
-      <AboutUs />
+      {/* <AboutUs />
       <MissionVission />
       <OurWork />
-      <Map />
+      <Map /> */}
       {/* <OurClient /> */}
-      <ContactUs />
-      <Footer />
+      {/* <ContactUs />
+      <Footer /> */}
     </>
   );
 };

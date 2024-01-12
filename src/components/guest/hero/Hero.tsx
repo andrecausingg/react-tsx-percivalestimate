@@ -26,11 +26,11 @@ const Hero: React.FC = () => {
       if (entry.isIntersecting) {
         const interval = setInterval(() => {
           setCountProjects((prevCount) => {
-            if (prevCount < 120) {
+            if (prevCount < 132) {
               return prevCount + 1;
             } else {
               clearInterval(interval);
-              return prevCount; // Return prevCount unchanged when it's already 120
+              return prevCount; // Return prevCount unchanged when it's already 132
             }
           });
         }, 9000);
@@ -60,11 +60,11 @@ const Hero: React.FC = () => {
       if (entry.isIntersecting) {
         const interval = setInterval(() => {
           setCountProjects((prevCount) => {
-            if (prevCount < 120) {
+            if (prevCount < 132) {
               return prevCount + 1;
             } else {
               clearInterval(interval);
-              return prevCount; // Return prevCount unchanged when it's already 120
+              return prevCount; // Return prevCount unchanged when it's already 132
             }
           });
         }, 1);
@@ -245,7 +245,7 @@ const Hero: React.FC = () => {
               ref={countCostRef} // Add this ref to make it observable
             >
               <h1 className="text-4xl lg:text-6xl font-gilroyExtraBold">
-                ₱{countProjects === 120 ? "2" : countProjects}B
+                ₱{countProjects === 132 ? "3.5" : countProjects}B
               </h1>
               <p className="text-l">Construction cost</p>
             </div>

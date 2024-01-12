@@ -3,8 +3,8 @@ import GuestLayout from "./layout/guest/GuestLayout";
 
 // Guest
 import Home from "./views/guest/Home";
-import Project from "./views/guest/Project";
-import Services from "./views/guest/Services";
+// import Project from "./views/guest/Project";
+// import Services from "./views/guest/Services";
 
 // Independent Component
 import NotFound from "./z-global/NotFound";
@@ -25,14 +25,14 @@ const routerConfig: Record<string, RouteConfig[]> = {
           path: "", // Empty path, as it should match the parent's path
           element: <Home />,
         },
-        {
-          path: "projects", // Empty path, as it should match the parent's path
-          element: <Project />,
-        },
-        {
-          path: "services", // Empty path, as it should match the parent's path
-          element: <Services />,
-        },
+        // {
+        //   path: "projects", // Empty path, as it should match the parent's path
+        //   element: <Project />,
+        // },
+        // {
+        //   path: "services", // Empty path, as it should match the parent's path
+        //   element: <Services />,
+        // },
       ],
     },
     {
